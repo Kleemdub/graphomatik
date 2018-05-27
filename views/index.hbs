@@ -1,2 +1,238 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+{{!-- <h1>{{title}}</h1>
+<p>Welcome to {{title}}</p> --}}
+<div id="scrollTarget1" class="section black scrollspy">
+    <div class="row valign-wrapper section-1">
+        <div class="section-1-wrapper">
+            <div>
+                <h2 class="section-1-title">
+                    GRAPHO<br/>
+                    <span class="matik-bold">MATIK</span>
+                </h2>
+                <div class="section-1-content">
+                    <p class="accolade">{</p>
+                </div>
+                <div class="section-1-content">
+                    <p>
+                        <span class="texte-gris">PORTFOLIO DE</span> CLEMENT DUBRISAY
+                    </p>
+                    <h3>
+                        <span class="text-bold">DEVELOPPEUR WEB</span><br/>
+                        <span class="text-full texte-gris">FULL STACK</span>
+                    </h3>
+                </div>
+                <div class="section-1-content">
+                    <p class="accolade">}</p>
+                </div>
+            </div>
+            <div class="header-btn-wrapper clearfix">
+                <a href="#scrollTarget2" class="pulse btn-floating btn-large waves-effect white"><i class="material-icons black-text">arrow_drop_down</i></a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="parallax-container">
+    <div class="parallax"><img src="/images/paris.jpg"></div>
+</div>
+
+<div id="scrollTarget2" class="section black scrollspy">
+    <div class="row container section-2 clearfix">
+        <div>
+            <h2>Présentation</h2>
+        </div>
+        <div>
+            {{!-- <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background.</p> --}}
+        </div>
+    </div>
+</div>
+
+<div class="parallax-container">
+    <div class="parallax"><img src="/images/paris.jpg"></div>
+</div>
+
+{{!-- <div id="scrollTarget3" class="section black scrollspy">
+    <div class="row container section-3">
+
+        <div class="project-container col s12 m12 l6 xl6">
+            <a href="http://www.championsinthearena.co" target="_BLANK"><img src="/images/champions.png" class="responsive-img"/></a>
+            <h3>Champions in the Arena / <span class="text-light">Projet final, bootcamp Ironhack</span></h3>
+            <p>
+                Full stack web application.
+            </p>
+        </div>
+        <div class="project-container col s12 m12 l6 xl6">
+            <a href="https://read-me-if-you-can.herokuapp.com" target="_BLANK"><img src="/images/readme.png" class="responsive-img"/></a>
+            <h3>Read me if you can / <span class="text-light">Second projet, bootcamp Ironhack</span></h3>
+            <p> 
+                Full stack web application.
+            </p>
+        </div>
+        <div class="project-container col s12 m12 l6 xl6">
+            <a href="https://kleemdub.github.io/IronBattleShip" target="_BLANK"><img src="/images/iron-battle.png" class="responsive-img"/></a>
+            <h3>Iron Battle / <span class="text-light">Premier projet, bootcamp Ironhack</span></h3>
+            <p>
+                Web brower game.
+            </p>
+        </div>
+        <div class="project-container col s12 m12 l6 xl6">
+            <a href="http://www.teebox.fr" target="_BLANK"><img src="/images/teebox.png" class="responsive-img"/></a>
+            <h3>Teebox / <span class="text-light">Projet professionnel réalisé en freelance</span></h3>
+            <p>
+                Site e-commerce.
+            </p>
+        </div>
+    </div>
+</div> --}}
+
+<div id="scrollTarget3" class="section black scrollspy">
+    <div class="row container section-3">
+        <div  class="col s12 l3 projets-infos-col">
+            <div class="project-1">
+                <h2>Projets</h2>
+            </div>
+
+            <div class="clearfix sep-20"></div>
+
+            <div class="project-2">
+                <p>
+                    Quelques <br/>réalisations <br/>récentes
+                </p>
+            </div>
+        </div>
+
+        <div class="col s12 l9 projets-content-col">
+            <div class="row">
+                <div class="col s12 m12 l6 xl6 champions-div">
+                    {{!-- <a href="http://www.championsinthearena.co" target="_BLANK"><img src="/images/champions.png" class="responsive-img"/></a> --}}
+                    <a href="#scrollTarget5" class="champions-link"><img src="/images/champions.png" class="responsive-img champions-img"/></a>
+                    <div class="champions-frame"></div>
+                    {{!-- <a href="#scrollTarget5"> --}}
+                        <div class="projet-infos champions-infos" >
+                            <h3>Champions in the Arena / <span class="text-light">Bootcamp Ironhack</span></h3>
+                            <p>
+                                Full stack web application.
+                            </p>
+                        </div>
+                    {{!-- </a> --}}
+                </div>
+                <div class="col s12 m12 l6 xl6 readme-div">
+                    {{!-- <a href="https://read-me-if-you-can.herokuapp.com" target="_BLANK"><img src="/images/readme.png" class="responsive-img readme-img"/></a> --}}
+                    <a href="#scrollTarget5" class="readme-link" ><img src="/images/readme.png" class="responsive-img readme-img"/></a>
+                    <div class="readme-frame"></div>
+                    <div class="projet-infos readme-infos">
+                        <h3>Read me if you can / <span class="text-light">Bootcamp Ironhack</span></h3>
+                        <p>
+                            Full stack web application.
+                        </p>
+                    </div>
+                </div>
+                <div class="col s12 m12 l6 xl6 ironbattle-div">
+                    {{!-- <a href="https://kleemdub.github.io/IronBattleShip" target="_BLANK"><img src="/images/iron-battle.png" class="responsive-img iron-img"/></a> --}}
+                    <a href="#scrollTarget5" class="iron-link" ><img src="/images/iron-battle.png" class="responsive-img iron-img"/></a>
+                    <div class="iron-frame"></div>
+                    <div class="projet-infos iron-infos">
+                        <h3>Iron Battle / <span class="text-light">Bootcamp Ironhack</span></h3>
+                        <p>
+                            Web brower game.
+                        </p>
+                    </div>
+                </div>
+                <div class="col s12 m12 l6 xl6 teebox-div">
+                    {{!-- <a href="http://www.teebox.fr" target="_BLANK"><img src="/images/teebox.png" class="responsive-img teebox-img"/></a> --}}
+                    <a href="#scrollTarget5" class="teebox-link" ><img src="/images/teebox.png" class="responsive-img teebox-img"/></a>
+                    <div class="teebox-frame"></div>
+                    <div class="projet-infos teebox-infos">
+                        <h3>Teebox / <span class="text-light">Projet professionnel</span></h3>
+                        <p>
+                            Site e-commerce.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{!-- <div class="projets-details-section col s12 m12 l12 xl12">
+            <div class="details-content"></div>
+        </div> --}}
+
+    </div>
+</div>
+
+<div id="scrollTarget5" class="section white scrollspy projets-details-section">
+    <div class="row container section-5">
+        <div class="projets-details champions-details">
+            <h4>Champions in the Arena</h4>
+        </div>
+        <div class="projets-details readme-details">
+            <h4>Read me if you can</h4>
+        </div>
+        <div class="projets-details iron-details">
+            <h4>Iron Battle</h4>
+        </div>
+        <div class="projets-details teebox-details">
+            <h4>Teebox</h4>
+        </div>
+    </div>
+    <a href="#scrollTarget3" class="btn-floating btn-large waves-effect black bt-fermer"><i class="material-icons white-text">close</i></a>
+</div>
+
+<div class="parallax-container">
+    <div class="parallax"><img src="/images/paris.jpg"></div>
+</div>
+
+<div id="scrollTarget4" class="section black scrollspy">
+    {{!-- <div class="row container valign-wrapper section-4"> --}}
+    <div class="row container section-4">
+
+        <div  class="col s12 l3 contact-infos-col">
+            <div class="contact-1">
+                <h2>Contact</h2>
+            </div>
+
+            <div class="clearfix sep-20"></div>
+
+            <div class="contact-2">
+                <p>
+                    Clément Dubrisay<br/>
+                    06 15 23 22 85
+                </p>
+            </div>
+            
+            <div class="contact-3">
+                <a href="https://www.linkedin.com/in/clement-dubrisay" target="_BLANK">
+                    <img src="/images/linkedin.png" />
+                    <span>LinkedIn</span>
+                </a>
+                <div class="clearfix sep-20"></div>
+                <a href="https://github.com/Kleemdub" target="_BLANK">
+                    <img src="/images/github.png" />
+                    <span>Github</span>
+                </a>
+            </div>
+        </div>
+
+        <div  class="col s12 l9 contact-form-col">
+            <p>
+                Pour toute demande ou question, vous pouvez m'envoyer un email <br/>en utilisant le formulaire ci-dessous.
+            </p>
+            <form>
+                <div class="input-field ">
+                    <input id="objet" type="text" class="validate" name="objet">
+                    <label for="objet">Objet</label>
+                </div>
+
+                <div class="input-field ">
+                    <textarea id="message" class="materialize-textarea" name="message"></textarea>
+                    <label for="message">Message</label>
+                </div>
+
+                <a class="waves-effect waves-light btn bt-envoyer">Envoyer</a>
+
+            </form>
+        </div>
+
+
+    </div>
+</div>
+

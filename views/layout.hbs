@@ -2,12 +2,39 @@
 <html>
   <head>
     <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   </head>
   <body>
 
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper container">
+          <a href="#scrollTarget1" class="brand-logo">GRAPHO<span class="text-bold">MATIK</span></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            {{!-- <li><a href="sass.html">Sass</a></li> --}}
+            <li><a href="#scrollTarget2">Présentation</a></li>
+            <li><a href="#scrollTarget3">Projets</a></li>
+            <li><a href="#scrollTarget4">Contact</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="#scrollTarget2">A Propos</a></li>
+            <li><a href="#scrollTarget3">Projets</a></li>
+            <li><a href="#scrollTarget4">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
     {{{body}}}
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src='/javascripts/script.js'></script>
   </body>
 </html>
